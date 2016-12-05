@@ -1,1 +1,1 @@
-jQuery(document).ready(function(){});
+jQuery(document).ready(function(){function i(){windowHeight=window.innerHeight?window.innerHeight:$(window).height(),windowWidth=window.innerWidth?window.innerWidth:$(window).width()}jQuery(window).resize(function(){i(),console.log("width is :",windowWidth,"Height is :",windowHeight),windowWidth<768&&console.log("width is under 768px !")})});
