@@ -18,15 +18,15 @@ add_theme_support('post-thumbnails', ['post', 'page']);
 // start set_styles
 function set_styles(){
 
-  // Bootstrap Core CSS
-  wp_register_style(
-    'bootstrap-css',
-    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
-    [],
-    null,
-    'all'
-  );
-  wp_enqueue_style('bootstrap-css');
+  // // Bootstrap Core CSS
+  // wp_register_style(
+  //   'bootstrap-css',
+  //   'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
+  //   [],
+  //   null,
+  //   'all'
+  // );
+  // wp_enqueue_style('bootstrap-css');
 
   wp_register_style(
     'master',
@@ -83,6 +83,26 @@ function set_scripts(){
     true
   );
   wp_enqueue_script('bootstrap-js');
+
+  // Offcanvas in footer
+  wp_register_script(
+    'offcanvas',
+    get_template_directory_uri().'/js/offcanvas.js',
+    [jquery],
+    null,
+    true
+  );
+  wp_enqueue_script('offcanvas');
+
+  // // Jasny CDN in footer
+  // wp_register_script(
+  //   'jasny',
+  //   'https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js',
+  //   [jquery],
+  //   null,
+  //   true
+  // );
+  // wp_enqueue_script('jasny');
 
   // App core
   wp_register_script(
