@@ -4,7 +4,7 @@
 
 //
 function remove_footer_admin () {
-  $link = 'http://www.wpbeginner.com';
+  $link = 'https://www.youtube.com/channel/UCfQLVTJhlAs0QGaj3lYwGpw';
   echo 'Drevet af <a href="http://www.wordpress.org" target="_blank">WordPress</a> | WordPress Tutorials: <a href="'.$link.'" target="_blank">WPBeginner</a></p>';
 }
 
@@ -27,6 +27,16 @@ function set_styles(){
   //   'all'
   // );
   // wp_enqueue_style('bootstrap-css');
+
+  // Raleway Font
+  wp_register_style(
+    'raleway',
+    'https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900',
+    [],
+    null,
+    'all'
+  );
+  wp_enqueue_style('raleway');
 
   wp_register_style(
     'master',

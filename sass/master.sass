@@ -1,12 +1,10 @@
-//import bootstrap
-@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss"
-//import Jasny-bootstrap
-@import "../bower_components/jasny-bootstrap/scss/jasny-bootstrap.scss"
+// Override variables
+@import "variables"
 
+// import bootstrap
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap"
+// import Jasny-bootstrap
+@import "../bower_components/jasny-bootstrap/scss/jasny-bootstrap"
 
-// offcanvas display fix
-.offcanvas
-  display: none
-
-.in
-  display: block
+// Custom styles overriding bootstrap
+@import "custom"
