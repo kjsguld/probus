@@ -39,9 +39,14 @@
     </nav>
     <!-- offcanvas nav end -->
     <div class="navbar navbar-default navbar-fixed-top">
-      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#offcanvasNavmenu" data-canvas="body">
+      <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#offcanvasNavmenu" data-canvas="body">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img alt="Probus logo" src="<?php echo get_template_directory_uri().'/asserts/probus_logo_small.png'; ?>">
+        </a>
+      </div>
     </div>

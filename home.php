@@ -35,5 +35,6 @@ $query = new WP_Query([
     break;
     } //end switch
   endwhile; ?>
+  <h1>home</h1>
   </div>
 <?php get_footer(); ?>

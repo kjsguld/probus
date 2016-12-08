@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="site-wrapper">
+<div class="content-wrapper">
   <?php while(have_posts()): the_post(); ?>
     <div class="container-fluid">
       <div class="row">
