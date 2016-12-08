@@ -46,7 +46,7 @@
       </button>
       <div class="navbar-header">
         <a class="navbar-brand" href="#">
-          <img alt="Probus logo" src="<?php echo get_template_directory_uri().'/asserts/probus_logo_small.png'; ?>">
+          <img alt="Probus logo" src="<?php echo get_template_directory_uri().'/assets/probus_logo_small.png'; ?>">
         </a>
       </div>
     </div>

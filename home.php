@@ -10,17 +10,11 @@ $query = new WP_Query([
 <div id="content-wrapper">
   <?php
   while ($query->have_posts()) : $query->the_post();
-  $GLOBALS['sectionType'] =  get_post_meta(get_the_ID(), 'class', true);
+  $GLOBALS['sectionType'] =  get_post_meta(get_the_ID(), 'sectionType', true);
   switch ($GLOBALS['sectionType']) {
-    case 'jumbotron':
-      get_template_part('template-parts/content', 'jumbotron');
-    break; // end jumbotron
-    case 'skills':
-      get_template_part('template-parts/content', 'skills');
-    break; //end skills
-    case 'reference':
-      get_template_part('template-parts/content', 'reference');
-    break; //end reference
+    case 'projects':
+      get_template_part('template-parts/section', 'projects');
+    break; // end projects
     default:
     ?>
       <div class="container">
@@ -35,6 +29,5 @@ $query = new WP_Query([
     break;
     } //end switch
   endwhile; ?>
-  <h1>home</h1>
   </div>
 <?php get_footer(); ?>
