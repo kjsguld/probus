@@ -12,6 +12,9 @@ $query = new WP_Query([
   while ($query->have_posts()) : $query->the_post();
   $GLOBALS['sectionType'] =  get_post_meta(get_the_ID(), 'sectionType', true);
   switch ($GLOBALS['sectionType']) {
+    case 'video':
+      get_template_part('template-parts/section', 'video');
+    break; // end Video
     case 'projects':
       get_template_part('template-parts/section', 'projects');
     break; // end projects
