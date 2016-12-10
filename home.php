@@ -19,6 +19,9 @@ $query = new WP_Query([
       get_template_part('template-parts/section', 'projects');
     break; // end projects
     default:
+    case 'users':
+    get_template_part('template-parts/section', 'users');
+      break;
     ?>
       <div class="container">
         <section id='page-<?php the_ID(); ?>' class="<?php echo $sectionType; ?>">

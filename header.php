@@ -39,7 +39,7 @@
     </nav>
     <!-- offcanvas nav end -->
     <div class="navbar navbar-default navbar-fixed-top">
-      <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#offcanvasNavmenu" data-canvas="body">
+      <button type="button" id="navbar-toggle" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#offcanvasNavmenu" data-canvas="body">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>

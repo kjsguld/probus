@@ -10,7 +10,6 @@ jQuery(document).ready(function(){
 
   }
 
-
   // For example, get window size on window resize
   jQuery(window).resize(function() {
     windowSize();
