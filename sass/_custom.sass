@@ -7,7 +7,7 @@
 
 // Navbar styling
 #content-wrapper
-  margin-top: 51px
+  margin-top: $navbar-height
 
 .navbar-header
   position: relative
@@ -56,6 +56,25 @@
     margin-left: 4px
     margin-right: -1px
 
+//avatars and project images
+.img-circle
+  border: 5px solid #ccc
+
+article.project
+  time
+    background-color: $gray-dark
+    color: $body-bg
+    border-radius: 100%
+    display: inline-block
+    height: 10vh
+    width: 10vh
+    padding: 0.5em
+
+// inverse layout container
+.container-inverse
+  background-color: $gray-dark
+  color: $body-bg
+
 // Responsive WP-video fix
 .wp-video, video.wp-video-shortcode, .mejs-container, .mejs-overlay.load
 	width: 100% !important
@@ -88,6 +107,9 @@ video.wp-video-shortcode
 	left: 0
 	width: auto !important
 	height: auto !important
+
+.mejs-overlay-play:focus
+    outline: none
 
 .container-fluid.video
   padding: 0

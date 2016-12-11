@@ -15,16 +15,20 @@ $query = new WP_Query([
     case 'video':
       get_template_part('template-parts/section', 'video');
     break; // end Video
+    case 'linkedinFeed':
+    get_template_part('template-parts/section', 'linkedinFeed');
+    break;
     case 'projects':
       get_template_part('template-parts/section', 'projects');
     break; // end projects
-    default:
     case 'users':
     get_template_part('template-parts/section', 'users');
-      break;
+    break;
+    default:
     ?>
+      <!-- Default template -->
       <div class="container">
-        <section id='page-<?php the_ID(); ?>' class="<?php echo $sectionType; ?>">
+        <section id='page-<?php the_ID(); ?>' class="<?php echo $GLOBALS['sectionType']; ?>">
           <header>
             <h1><?php the_title(); ?></h1>
           </header>
