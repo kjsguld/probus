@@ -5,10 +5,14 @@ section
 @media screen and (min-width: $container-sm)
   section
     padding-bottom: $padding-large-vertical * 4
+  section.users, section.projects
+    p
+      columns: 2
 
 @media screen and (min-width: $container-md)
   section:not(.video)
     padding-top: $padding-large-vertical
+
 
 // offcanvas display fix
 .offcanvas

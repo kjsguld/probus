@@ -30,12 +30,7 @@
   <body  <?php body_class(); ?>>
     <!-- offcanvas nav start -->
     <nav id="offcanvasNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
-      <ul class="nav navmenu-nav">
-        <li class="active"><a href="#">Nyheder</a></li>
-        <li><a href="#">Projekter</a></li>
-        <li><a href="#">Hvem er vi</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
+      <?php wp_nav_menu( array( 'menu_class' => 'nav navmenu-nav', 'container' => '') ); ?>
     </nav>
     <!-- offcanvas nav end -->
     <header class="navbar navbar-default navbar-fixed-top">
@@ -51,12 +46,7 @@
           </a>
         </div>
         <nav id="" class="hidden-xs" role="navigation">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Nyheder</a></li>
-            <li><a href="#">Projekter</a></li>
-            <li><a href="#">Hvem er vi</a></li>
-            <li><a href="#">Kontakt</a></li>
-          </ul>
+          <?php wp_nav_menu( array( 'menu_class' => 'nav navbar-nav navbar-right', 'container' => '') ); ?>
         </nav>
       </div>
     </header>
