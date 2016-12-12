@@ -38,7 +38,7 @@
       </ul>
     </nav>
     <!-- offcanvas nav end -->
-    <div class="navbar navbar-default navbar-fixed-top">
+    <header class="navbar navbar-default navbar-fixed-top">
       <button type="button" id="navbar-toggle" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#offcanvasNavmenu" data-canvas="body">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -49,4 +49,12 @@
           <img alt="Probus logo" src="<?php echo get_template_directory_uri().'/assets/probus_logo_small.png'; ?>">
         </a>
       </div>
-    </div>
+      <nav id="" class="navbar-nav navbar-right" role="navigation">
+        <ul class="nav navmenu-nav">
+          <li class="active"><a href="#">Nyheder</a></li>
+          <li><a href="#">Projekter</a></li>
+          <li><a href="#">Hvem er vi</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>

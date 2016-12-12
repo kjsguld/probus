@@ -7,7 +7,7 @@
 
 // Navbar styling
 #content-wrapper
-  margin-top: $navbar-height
+  margin-top: $navbar-height - $navbar-margin-bottom
 
 .navbar-header
   position: relative
@@ -62,13 +62,17 @@
 
 article.project
   time
+    position: absolute
+    top: 70%
+    left: 70%
     background-color: $gray-dark
     color: $body-bg
+    font-size: 2em
     border-radius: 100%
     display: inline-block
     height: 10vh
     width: 10vh
-    padding: 0.5em
+    padding: 0.8em 0.4em
 
 // inverse layout container
 .container-inverse
