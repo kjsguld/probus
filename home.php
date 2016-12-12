@@ -15,9 +15,12 @@ $query = new WP_Query([
     case 'video':
       get_template_part('template-parts/section', 'video');
     break; // end Video
+    case 'cite':
+    get_template_part('template-parts/section', 'cite');
+    break; // end Cite
     case 'linkedinFeed':
     get_template_part('template-parts/section', 'linkedinFeed');
-    break;
+    break; // end linkedIn
     case 'projects':
       get_template_part('template-parts/section', 'projects');
     break; // end projects

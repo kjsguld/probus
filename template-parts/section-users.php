@@ -15,15 +15,17 @@ foreach($allUsers as $currentUser){
   <section id='page-<?php the_ID(); ?>' class="<?php echo $GLOBALS['sectionType']; ?>">
     <h1><?php the_title(); ?></h1>
     <?php the_content(); ?>
-    <?php foreach($users as $user) { ?>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <?php $args = array('class' => array('img-responsive', 'img-rounded')); ?>
-  			<?php echo get_avatar( $user->user_email, '400', null, $user->display_name, $args); ?>
-        <div class="">
-          <h3><?php echo $user->display_name; ?></h3>
-          <p><?php echo nl2br(get_user_meta($user->ID, 'description', true)); ?></p>
-        </div>
-      </div>
-    <?php } ?>
+		<div class="row">
+	    <?php foreach($users as $user) { ?>
+	      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+	        <?php $args = array('class' => array('img-responsive', 'img-rounded')); ?>
+	  			<?php echo get_avatar( $user->user_email, '400', null, $user->display_name, $args); ?>
+	        <div class="">
+	          <h3><?php echo $user->display_name; ?></h3>
+	          <p><?php echo nl2br(get_user_meta($user->ID, 'description', true)); ?></p>
+	        </div>
+	      </div>
+	    <?php } ?>
+		</div>
   </section>
 </div>
