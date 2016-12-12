@@ -9,7 +9,7 @@ jQuery(document).ready(function(){
     "Accept":"application/json"
   },
   contentType: "application/json",
-  dataType: 'json',
+  dataType: 'jsonp',
   success: function(data) {
     console.log('####');
     console.log(data);
@@ -24,6 +24,6 @@ jQuery(document).ready(function(){
   //   console.log(res);
   //   console.log(res.getAllResponseHeaders());
   // }
-});
+  });
 
 });

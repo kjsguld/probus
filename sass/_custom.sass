@@ -7,7 +7,7 @@
 
 // Navbar styling
 #content-wrapper
-  margin-top: $navbar-height - $navbar-margin-bottom
+  margin-top: $navbar-height
 
 .navbar-header
   position: relative
@@ -34,6 +34,9 @@
   z-index: 3
 
 //menu button anmation
+header.navbar
+  margin-bottom: 0
+
 .navbar
   button
     span.icon-bar
@@ -72,7 +75,28 @@ article.project
     display: inline-block
     height: 10vh
     width: 10vh
-    padding: 0.8em 0.4em
+    padding: 2vh 1vh
+
+@media screen and (min-width: $container-md)
+  article.project
+    time
+      padding: 3vh 2vh
+
+@media screen and (min-width: $container-lg)
+  article.project
+    time
+      padding: 2.5vh 1.8vh
+      width: 8vh
+      height: 8vh
+
+@media screen and (min-width: 2560px)
+  article.project
+    time
+      top: 66%
+      left: 66%
+      padding: 2vh 1.4vh
+      width: 6vh
+      height: 6vh
 
 // inverse layout container
 .container-inverse

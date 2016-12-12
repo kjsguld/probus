@@ -10,9 +10,9 @@
     <?php wp_head(); ?>
     <!-- Open Graph properties -->
     <?php
-    $ogImage = 'http://';
     if ( has_post_thumbnail() ) {
-      $ogImage .= the_post_thumbnail_url('large');
+      $ogImageWpArray = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "medium" );
+      $ogImage .= $ogImageWpArray[0];
     } else {
       # get defualt
     }
@@ -24,8 +24,8 @@
     <meta property="og:url" content="<?php echo bloginfo('url'); ?>" />
     <meta property="og:locale" content="<?php echo bloginfo('language'); ?>">
     <meta property="og:image" content="<?php echo $ogImage; ?>" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="300" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="200" />
   </head>
   <body  <?php body_class(); ?>>
     <!-- offcanvas nav start -->
@@ -39,22 +39,24 @@
     </nav>
     <!-- offcanvas nav end -->
     <header class="navbar navbar-default navbar-fixed-top">
-      <button type="button" id="navbar-toggle" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#offcanvasNavmenu" data-canvas="body">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <img alt="Probus logo" src="<?php echo get_template_directory_uri().'/assets/probus_logo_small.png'; ?>">
-        </a>
+      <div class="container">
+        <button type="button" id="navbar-toggle" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#offcanvasNavmenu" data-canvas="body">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Probus logo" src="<?php echo get_template_directory_uri().'/assets/probus_logo_small.png'; ?>">
+          </a>
+        </div>
+        <nav id="" class="hidden-xs" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Nyheder</a></li>
+            <li><a href="#">Projekter</a></li>
+            <li><a href="#">Hvem er vi</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav id="" class="navbar-nav navbar-right" role="navigation">
-        <ul class="nav navmenu-nav">
-          <li class="active"><a href="#">Nyheder</a></li>
-          <li><a href="#">Projekter</a></li>
-          <li><a href="#">Hvem er vi</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
     </header>
