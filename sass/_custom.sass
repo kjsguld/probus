@@ -103,6 +103,18 @@ article.project
   background-color: $gray-dark
   color: $body-bg
 
+//Jumbotron
+div.jumbotron
+  background-size: 100% auto !important
+  min-height: 80vh
+  display: flex
+  align-items: flex-end  
+
+@media screen and (max-width: $container-sm)
+  div.jumbotron
+    background-size: auto 100% !important
+
+
 // Responsive WP-video fix
 .wp-video, video.wp-video-shortcode, .mejs-container, .mejs-overlay.load
 	width: 100% !important
@@ -141,3 +153,4 @@ video.wp-video-shortcode
 
 .container-fluid.video
   padding: 0
+// END Responsive WP-video fix

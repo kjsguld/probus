@@ -1,20 +1,17 @@
 <?php get_header(); ?>
-<div class="content-wrapper">
+<div id="content-wrapper">
   <?php while(have_posts()): the_post(); ?>
-    <div class="container-fluid">
-      <div class="row">
-
+    <div class="jumbotron" style="background: url(<?php echo the_post_thumbnail_url( 'full' ); ?>);">
+      <div class="container">
+        <h1><?php the_title(); ?></h1>
       </div>
     </div>
     <div class="container">
-      <sction class="row">
-        <header>
-          
-        </header>
-      </section>
       <div class="row">
-        <div class="col-xs-12">
-
+        <div class="col-xs-12 col-md-6">
+          <h1><?php the_title(); ?></h1>
+          <?php the_content(); ?>
+          <?php echo nl2br(get_post_meta(get_the_ID(), 'facts', true)); //finds facts and ?>
         </div>
       </div>
     </div>
