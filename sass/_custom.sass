@@ -5,14 +5,15 @@ section
 @media screen and (min-width: $container-sm)
   section
     padding-bottom: $padding-large-vertical * 4
-  section.users, section.projects
-    p
-      columns: 2
+  section.users>p, section.projects>p
+    columns: 2
 
 @media screen and (min-width: $container-md)
   section:not(.video)
     padding-top: $padding-large-vertical
 
+.container.singular
+  padding-bottom: $padding-large-vertical * 2
 
 // offcanvas display fix
 .offcanvas
@@ -126,10 +127,23 @@ div.jumbotron
   min-height: 80vh
   display: flex
   align-items: flex-end
+  div.container
+    color: $body-bg
+    h1
+      font-weight: 700
 
 @media screen and (max-width: $container-sm)
   div.jumbotron
     background-size: auto 100% !important
+
+.container.singular .container-inverse
+  padding-bottom: $padding-large-vertical
+  line-height: $line-height-base * 1.5
+  min-height: 150px
+
+@media screen and (min-width: $container-sm)
+  .container.singular .container-inverse
+
 
 // Cite
 section.cite
@@ -162,6 +176,18 @@ section.cite
   section.cite
     .citeInner
       font-size: $font-size-large
+
+//footer
+footer
+  margin-top: $padding-large-vertical * 2
+  margin-bottom: $padding-large-vertical * 2
+  a img
+    width: 100%
+
+@media screen and (max-width: $container-sm)
+  footer
+    a img
+      width: 66%
 
 // Responsive WP-video fix
 .wp-video, video.wp-video-shortcode, .mejs-container, .mejs-overlay.load

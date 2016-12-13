@@ -10,8 +10,10 @@ add_action('init', 'register_theme_menus');
 // add active to menuitems for bootstrap
 function special_nav_class ($classes, $item) {
   $homeURL = get_bloginfo('url');
-  if ($item->url == $homeURL) {
-    $classes[] = 'active ';
+  if(!is_single()){
+    if ($item->url == $homeURL) {
+      $classes[] = 'active ';
+    }
   }
   // if (in_array('current-menu-item', $classes) ){
   //   $classes[] = 'active ';

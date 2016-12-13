@@ -6,11 +6,16 @@
         <h1><?php the_title(); ?></h1>
       </div>
     </div>
-    <div class="container">
+    <div class="container singular">
       <div class="row">
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12">
           <h1><?php the_title(); ?></h1>
+        </div>
+        <div class="col-xs-12 col-sm-7">
           <?php the_content(); ?>
+        </div>
+        <div class="col-xs-12 col-sm-5 container-inverse">
+          <h3>Fakta om projektet</h3>
           <?php echo nl2br(get_post_meta(get_the_ID(), 'facts', true)); //finds facts and ?>
         </div>
       </div>

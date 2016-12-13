@@ -7,7 +7,7 @@ $subQuery = new WP_Query([
 ]);
 ?>
 <!-- Projects -->
-<div class="container">
+<div id="<?php echo $GLOBALS['sectionType']; ?>" class="container">
   <section id='page-<?php the_ID(); ?>' class="<?php echo $GLOBALS['sectionType']; ?>">
     <header>
       <h1><?php the_title(); ?></h1>

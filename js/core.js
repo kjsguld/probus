@@ -19,4 +19,20 @@ jQuery(document).ready(function(){
     }
   });
 
+  // register click on any #link
+  jQuery('a[href^="#"]').on('click', function(event) {
+    // remove and then add .active
+    jQuery("ul.nav li").click(function() {
+      jQuery("ul.nav li").removeClass('active');
+      jQuery(this).addClass('active');
+    });
+    // smooth scroll
+    var target = jQuery(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        jQuery('html, body').stop().animate({
+            scrollTop: target.offset().top-70
+        }, 1000);
+    }
+  });
 });
