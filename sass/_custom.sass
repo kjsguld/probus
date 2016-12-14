@@ -18,6 +18,18 @@ section
 .circ-item-wrapper
   margin: $padding-large-vertical*2 0
 
+// clearfix for tablet size
+@media screen and (min-width: $container-sm) and (max-width: $container-md)
+  .circ-item-wrapper:nth-child(odd)
+    clear: both
+    display: table
+
+// clearfix for desktop size
+@media screen and (min-width: $container-md)
+  .circ-item-wrapper:nth-child(3n+1)
+    clear: both
+    display: table
+
 // offcanvas display fix
 #offcanvasNavmenu
   width: 220px

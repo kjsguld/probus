@@ -1,6 +1,6 @@
 <?php
 // Get all users order by amount of posts
-$allUsers = get_users('orderby=post_count&order=DESC');
+$allUsers = get_users('orderby=registered&order=DESC');
 $users = array();
 
 // Remove subscribers from the list as they won't be part of site team
