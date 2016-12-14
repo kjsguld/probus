@@ -30,20 +30,7 @@ $query = new WP_Query([
     case 'users':
     get_template_part('template-parts/section', 'users');
     break;
-    default:
-    ?>
-      <!-- Default template -->
-      <div class="container">
-        <section id='page-<?php the_ID(); ?>' class="<?php echo $GLOBALS['sectionType']; ?>">
-          <header>
-            <h1><?php the_title(); ?></h1>
-          </header>
-          <?php the_content(); ?>
-        </section>
-      </div>
-    <?php
-    break;
-    } //end switch
+  } //end switch
   endwhile; ?>
   </div>
 <?php get_footer(); ?>
