@@ -6,7 +6,7 @@
           <?php bloginfo('name'); ?> &copy; <?php echo (date('Y')<2015) ? '2015 - '.date('Y') : date('Y') ; ?>
         </p>
         <address class="col-xs-12 col-sm-4">
-          Hollufgårds Alle 6 <br>
+          <a href="https://www.google.dk/maps/place/Hollufgårds+Allé+6,+5220+Odense+SØ/@55.354862,10.4390862,17z/">Hollufgårds Alle 6</a>
           5220 Odense SØ <br>
           <strong>Telefon:</strong> 31 63 38 00<br>
           <strong>E-mail:</strong> <a href="mailto:#">info@probusfyn.dk</a><br>

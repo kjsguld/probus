@@ -124,17 +124,27 @@ article.project
 //Jumbotron
 div.jumbotron
   background-size: 100% auto !important
-  min-height: 80vh
+  background-position: 50% 0
+  min-height: 70vh
+  padding-bottom: 0
   display: flex
   align-items: flex-end
-  div.container
-    color: $body-bg
-    h1
-      font-weight: 700
+  margin-bottom: 0
+  div.gradient
+    width: 100%
+    background: linear-gradient(rgba(0,0,0,0), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5))
+    div.container
+      padding-bottom: $jumbotron-padding
+      color: $body-bg
+      h1
+        font-size: 48px
+        font-weight: 700
 
 @media screen and (max-width: $container-sm)
   div.jumbotron
     background-size: auto 100% !important
+    div.gradient div.container h1
+      font-size: 20px
 
 .container.singular .container-inverse
   padding-bottom: $padding-large-vertical

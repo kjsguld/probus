@@ -18,6 +18,9 @@ $query = new WP_Query([
     case 'cite':
     get_template_part('template-parts/section', 'cite');
     break; // end Cite
+    case 'featuredPerson':
+    get_template_part('template-parts/section', 'featuredPerson');
+    break; // end featuredPerson
     case 'linkedinFeed':
     get_template_part('template-parts/section', 'linkedinFeed');
     break; // end linkedIn

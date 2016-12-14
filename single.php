@@ -2,8 +2,10 @@
 <div id="content-wrapper">
   <?php while(have_posts()): the_post(); ?>
     <div class="jumbotron" style="background: url(<?php echo the_post_thumbnail_url( 'full' ); ?>);">
-      <div class="container">
-        <h1><?php the_title(); ?></h1>
+      <div class="gradient">
+        <div class="container">
+          <h1><?php the_title(); ?> - En del af Probus</h1>
+        </div>
       </div>
     </div>
     <div class="container singular">
@@ -14,10 +16,12 @@
         <div class="col-xs-12 col-sm-7">
           <?php the_content(); ?>
         </div>
-        <div class="col-xs-12 col-sm-5 container-inverse">
-          <h3>Fakta om projektet</h3>
-          <?php echo nl2br(get_post_meta(get_the_ID(), 'facts', true)); //finds facts and ?>
-        </div>
+        <?php if (get_post_meta(get_the_ID(), 'facts', true)) { ?>
+          <div class="col-xs-12 col-sm-5 container-inverse">
+            <h3>Fakta om projektet</h3>
+            <?php echo nl2br(get_post_meta(get_the_ID(), 'facts', true)); //finds facts and print it ?>
+          </div>
+        <?php } //end if ?>
       </div>
     </div>
   <?php endwhile; ?>
