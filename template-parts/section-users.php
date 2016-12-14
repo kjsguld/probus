@@ -17,7 +17,7 @@ foreach($allUsers as $currentUser){
     <?php the_content(); ?>
 		<div class="row">
 	    <?php foreach($users as $user) { ?>
-	      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+	      <div class="circ-item-wrapper col-xs-12 col-sm-6 col-md-4 col-lg-4">
 	        <?php $args = array('class' => array('img-responsive', 'img-rounded')); ?>
 	  			<?php echo get_avatar( $user->user_email, '400', null, $user->display_name, $args); ?>
 	        <div class="">

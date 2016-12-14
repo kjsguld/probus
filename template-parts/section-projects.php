@@ -15,7 +15,7 @@ $subQuery = new WP_Query([
     <?php the_content(); ?>
     <div class="row">
       <?php while ($subQuery->have_posts()) : $subQuery->the_post(); //Here the active loop is changed to subQuery  ?>
-        <article class="project col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <article class="project circ-item-wrapper col-xs-12 col-sm-6 col-md-4 col-lg-4">
           <div>
             <?php the_post_thumbnail(array(500,500), array('class' => 'img-responsive img-circle')); ?>
             <time class="pull-right"><?php the_date('Y'); ?></time>
