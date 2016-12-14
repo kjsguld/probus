@@ -42,7 +42,7 @@
         </button>
         <div class="navbar-header">
           <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
-            <img alt="Probus logo" src="<?php echo get_template_directory_uri().'/assets/probus_logo_small.png'; ?>">
+            <img alt="Probus logo" src="<?php echo get_template_directory_uri().'/assets/probus_logo.png'; ?>">
           </a>
         </div>
         <nav id="" class="hidden-xs" role="navigation">

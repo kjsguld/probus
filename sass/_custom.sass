@@ -19,6 +19,9 @@ section
   margin: $padding-large-vertical*2 0
 
 // offcanvas display fix
+#offcanvasNavmenu
+  width: 220px
+
 .offcanvas
   display: none
 
@@ -33,13 +36,14 @@ section
   position: relative
   .navbar-brand
     position: absolute
-    width: 100%
-    left: 0
+    width: 50%
+    left: calc(25% - #{$navbar-padding-horizontal})
     top: 0
     text-align: center
     margin: auto
     img
       margin: -3px auto
+      height: 25px
 
 .navmenu-fixed-left
   background: url('../assets/probus-circ.svg') left bottom no-repeat
@@ -180,22 +184,31 @@ section.cite
 section.cite
   .citeInner
     padding: $padding-large-vertical*2 $padding-base-horizontal*0.5 0 $padding-base-horizontal*0.5
+  div.curlyBracket
+    width: 95px
 
 @media screen and (max-width: 344px)
   section.cite
     .citeInner
       padding-top: $padding-large-vertical*1.2
       font-size: $font-size-small
+    div.curlyBracket
+      height: 150px
 
-@media screen and (min-width: $container-md)
+@media screen and (max-width: $container-md)
   section.cite
     div.curlyBracket
-      height: 125px
+      height: 160px
 
 @media screen and (min-width: $container-sm)
   section.cite
     .citeInner
       font-size: $font-size-large
+
+@media screen and (min-width: $container-md)
+  section.cite
+    div.curlyBracket
+      height: 125px
 
 //featured person
 section.featuredPerson
