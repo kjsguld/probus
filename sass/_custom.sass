@@ -112,7 +112,20 @@ article.project
     display: inline-block
     height: 10vh
     width: 10vh
+    min-width: 70px
+    min-height: 70px
     padding: 2vh 1vh
+
+@media screen and (max-width: $container-sm)
+  article.project
+    time
+      padding: 3vh 1.5vh
+
+@media screen and (max-width: $container-md)
+  article.project
+    time
+      max-width: 75px
+      max-height: 75px
 
 @media screen and (min-width: $container-md)
   article.project
@@ -125,6 +138,8 @@ article.project
       padding: 2.5vh 1.8vh
       width: 8vh
       height: 8vh
+      min-height: 80px
+      min-width: 80px
 
 @media screen and (min-width: 2560px)
   article.project
