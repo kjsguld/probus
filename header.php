@@ -40,7 +40,7 @@
     <link rel="icon" type="image/png" href="<?php echo bloginfo('url'); ?>/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="<?php echo bloginfo('url'); ?>/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="<?php echo bloginfo('url'); ?>/manifest.json">
-    <link rel="mask-icon" href="<?php echo bloginfo('url'); ?>/safari-pinned-tab.svg" color="#ca3f46">
+    <link rel="mask-icon" href="<?php echo bloginfo('url'); ?>/safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="<?php echo bloginfo('url'); ?>/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -63,7 +63,7 @@
             <img alt="Probus logo" src="<?php echo get_template_directory_uri().'/assets/probus_logo.png'; ?>">
           </a>
         </div>
-        <nav id="" class="hidden-xs" role="navigation">
+        <nav class="hidden-xs" role="navigation">
           <?php wp_nav_menu( array( 'menu_class' => 'nav navbar-nav navbar-right', 'container' => '') ); ?>
         </nav>
       </div>
