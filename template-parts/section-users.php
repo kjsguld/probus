@@ -11,7 +11,7 @@ foreach($allUsers as $currentUser){
 }
 ?>
 <!-- Users -->
-<div class="container">
+<div id="<?php echo $GLOBALS['sectionType']; ?>" class="container">
   <section id='page-<?php the_ID(); ?>' class="<?php echo $GLOBALS['sectionType']; ?>">
     <h1><?php the_title(); ?></h1>
     <?php the_content(); ?>

@@ -3,7 +3,7 @@
 $subQuery = new WP_Query([
   'post_type' => 'post',
   'category_name' => 'projects',
-  'order' => 'ASC'
+  'order' => 'DESC'
 ]);
 ?>
 <!-- Projects -->

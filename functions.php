@@ -102,6 +102,7 @@ add_action('wp_enqueue_scripts', 'set_styles');
 // start set_scripts
 function set_scripts(){
 
+  // comments removed here while deploying
   // Google Analytics
   // wp_register_script(
   //   'googleAnalytics',
